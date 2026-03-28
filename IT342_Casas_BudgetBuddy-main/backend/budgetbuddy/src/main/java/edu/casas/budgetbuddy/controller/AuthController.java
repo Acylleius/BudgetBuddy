@@ -12,11 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 
 @RestController
-<<<<<<< HEAD
 @RequestMapping("/auth")
-=======
-@RequestMapping("/api/v1/auth")
->>>>>>> 3ee9040 (IT342 Phase 2 – Mobile Development Completed)
 public class AuthController {
 
     @Autowired

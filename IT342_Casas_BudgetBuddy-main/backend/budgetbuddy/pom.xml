@@ -67,10 +67,6 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-<<<<<<< HEAD
-=======
-			<scope>provided</scope>
->>>>>>> 3ee9040 (IT342 Phase 2 – Mobile Development Completed)
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
