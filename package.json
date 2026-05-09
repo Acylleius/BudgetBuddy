@@ -1,0 +1,8 @@
+{
+  "name": "budgetbuddy",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build:frontend": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-frontend.ps1"
+  }
+}
