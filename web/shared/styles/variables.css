@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --color-bg: #F4F1FF;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #EEF2FF;
+  --color-border: #DDD6FE;
+  --color-primary: #7C6FCD;
+  --color-primary-light: #EDE9FE;
+  --color-secondary: #F9A8D4;
+  --color-income: #6EE7B7;
+  --color-income-bg: #ECFDF5;
+  --color-expense: #FCA5A5;
+  --color-expense-bg: #FFF1F2;
+  --color-warning: #FCD34D;
+  --color-text-primary: #1E1B4B;
+  --color-text-body: #4B5563;
+  --color-text-muted: #9CA3AF;
+  --color-success: #34D399;
+  --color-danger: #F87171;
+  --shadow-card: 0 2px 16px rgba(124, 111, 205, 0.10);
+  --shadow-hover: 0 6px 24px rgba(124, 111, 205, 0.18);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text-body);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  color: var(--color-text-primary);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+p, span, td, label { color: var(--color-text-body); }
+
+a { color: var(--color-primary); }
+
+.amount {
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+}

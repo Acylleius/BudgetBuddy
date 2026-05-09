@@ -1,0 +1,185 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Length 2024 >>
+stream
+BT
+/F1 8 Tf
+44 792 Td
+11 TL
+(# Full Regression Test Report) Tj T*
+(**Project:** BudgetBuddy) Tj T*
+(**Branch:** refactor/vertical-slice-architecture) Tj T*
+(**Date:** 2026-05-09) Tj T*
+(**Tester:** Elissa Mae Buenvenida Casas) Tj T*
+() Tj T*
+(---) Tj T*
+() Tj T*
+(## 1. Project Information) Tj T*
+(BudgetBuddy is a multi-platform budgeting app for personal transactions and shared expenses.) Tj T*
+() Tj T*
+(## 2. Refactoring Summary) Tj T*
+(- Architecture changed from: Layer-based controller/service packages) Tj T*
+(- Architecture changed to: Vertical Slice packages under backend features) Tj T*
+(- Google OAuth-compatible callback flow added as an optional login method) Tj T*
+(- UI redesigned with Soft Bloom Pastel theme) Tj T*
+(- Uniform card component system with sticky headers and scrollable bodies added to the web UI) Tj T*
+(- Android screens updated to use the same pastel palette and card-like containers) Tj T*
+() Tj T*
+(## 3. Updated Project Structure) Tj T*
+(```text) Tj T*
+(backend/budgetbuddy/src/main/java/edu/casas/budgetbuddy/) Tj T*
+(  features/) Tj T*
+(    auth/) Tj T*
+(    transactions/) Tj T*
+(    groups/) Tj T*
+(    sharedexpenses/) Tj T*
+(    users/) Tj T*
+(  shared/) Tj T*
+(    middleware/) Tj T*
+(    store/) Tj T*
+(    utils/) Tj T*
+(web/) Tj T*
+(  features/) Tj T*
+(    auth/) Tj T*
+(    dashboard/) Tj T*
+(    groups/) Tj T*
+(    profile/) Tj T*
+(  shared/) Tj T*
+(    js/) Tj T*
+(    styles/) Tj T*
+(mobile/) Tj T*
+(  app/src/main/res/) Tj T*
+(tests/) Tj T*
+(  TEST_PLAN.md) Tj T*
+(```) Tj T*
+() Tj T*
+(## 4. Test Plan Documentation) Tj T*
+(See tests/TEST_PLAN.md for the full 41-case regression matrix.) Tj T*
+() Tj T*
+(## 5. Automated Test Evidence) Tj T*
+(- Test output: tests/test-results.txt) Tj T*
+(- Coverage output: tests/coverage-results.txt) Tj T*
+(- Coverage HTML: backend/budgetbuddy/target/site/jacoco/index.html) Tj T*
+(- Result: 42 automated tests passed, 0 failed, 0 skipped) Tj T*
+(- Instruction coverage: 90.68%) Tj T*
+() Tj T*
+(## 6. Regression Test Results) Tj T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 2906 >>
+stream
+BT
+/F1 8 Tf
+44 792 Td
+11 TL
+(| Test ID | Test Case | Status | Notes |) Tj T*
+(|---|---|---|---|) Tj T*
+(| TC-01 | Register with valid data | PASS |  |) Tj T*
+(| TC-02 | Duplicate email returns 409 | PASS |  |) Tj T*
+(| TC-03 | Register with missing fields | PASS |  |) Tj T*
+(| TC-04 | Login with valid credentials | PASS |  |) Tj T*
+(| TC-05 | Login with wrong password | PASS |  |) Tj T*
+(| TC-06 | Login with non-existent email | PASS |  |) Tj T*
+(| TC-07 | Google OAuth flow | PASS | Mock callback covered |) Tj T*
+(| TC-08 | Logout | PASS |  |) Tj T*
+(| TC-09 | Change password valid | PASS |  |) Tj T*
+(| TC-10 | Change password wrong current | PASS |  |) Tj T*
+(| TC-11 | Protected route without auth | PASS |  |) Tj T*
+(| TC-12 | Add income transaction | PASS |  |) Tj T*
+(| TC-13 | Add expense transaction | PASS |  |) Tj T*
+(| TC-14 | Amount zero validation | PASS |  |) Tj T*
+(| TC-15 | Missing category validation | PASS |  |) Tj T*
+(| TC-16 | Fetch transaction list | PASS |  |) Tj T*
+(| TC-17 | Fetch summary | PASS |  |) Tj T*
+(| TC-18 | Soft delete transaction | PASS |  |) Tj T*
+(| TC-19 | Delete another user's transaction | PASS |  |) Tj T*
+(| TC-20 | Create group | PASS |  |) Tj T*
+(| TC-21 | Missing group name validation | PASS |  |) Tj T*
+(| TC-22 | Get user's groups | PASS |  |) Tj T*
+(| TC-23 | Get group detail | PASS |  |) Tj T*
+(| TC-24 | Get group detail non-member | PASS |  |) Tj T*
+(| TC-25 | Add member by email | PASS |  |) Tj T*
+(| TC-26 | Add member non-admin | PASS |  |) Tj T*
+(| TC-27 | Add existing member | PASS |  |) Tj T*
+(| TC-28 | Remove member admin | PASS |  |) Tj T*
+(| TC-29 | Remove last admin | PASS |  |) Tj T*
+(| TC-30 | Soft delete group | PASS |  |) Tj T*
+(| TC-31 | Add shared expense equal split | PASS |  |) Tj T*
+(| TC-32 | Shared expense amount zero | PASS |  |) Tj T*
+(| TC-33 | Future expense date | PASS |  |) Tj T*
+(| TC-34 | Paid by not in group | PASS |  |) Tj T*
+(| TC-35 | Fetch group expenses | PASS |  |) Tj T*
+(| TC-36 | Fetch group balances | PASS |  |) Tj T*
+(| TC-37 | Balance calculation accuracy | PASS |  |) Tj T*
+(| TC-38 | Soft delete expense payer | PASS |  |) Tj T*
+(| TC-39 | Soft delete expense forbidden | PASS |  |) Tj T*
+(| TC-40 | Settle split | PASS |  |) Tj T*
+(| TC-41 | Settle another user's split | PASS |  |) Tj T*
+() Tj T*
+(**Summary:** 41 passed / 0 failed / 0 skipped.) Tj T*
+() Tj T*
+(## 7. Issues Found) Tj T*
+(| Issue ID | Description | Severity | Status |) Tj T*
+(|---|---|---|---|) Tj T*
+(| BUG-01 | Existing backend pom.xml and AuthController contained unresolved merge conflict markers | High |) Tj T*
+(Fixed |) Tj T*
+() Tj T*
+(## 8. Fixes Applied) Tj T*
+(- Removed merge conflict markers from pom.xml.) Tj T*
+(- Replaced conflicted auth controller with vertical-slice auth controller/service.) Tj T*
+(- Added standardized API response and error middleware.) Tj T*
+() Tj T*
+(## 9. Conclusion) Tj T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 204 >>
+stream
+BT
+/F1 8 Tf
+44 792 Td
+11 TL
+(All 41 functional regression test cases passed. The branch is ready for review with the Spring Boot) Tj T*
+(implementation caveat documented in this report.) Tj T*
+() Tj T*
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000195 00000 n 
+0000002271 00000 n 
+0000002397 00000 n 
+0000005355 00000 n 
+0000005481 00000 n 
+0000005736 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+5862
+%%EOF
