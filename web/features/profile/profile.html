@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BudgetBuddy Profile</title>
+  <link rel="stylesheet" href="../../shared/styles/variables.css">
+  <link rel="stylesheet" href="../../shared/styles/components.css">
+  <link rel="stylesheet" href="../../shared/styles/layout.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="../dashboard/dashboard.html">BudgetBuddy</a>
+      <div class="nav-links"><a href="../dashboard/dashboard.html">Dashboard</a><a href="../groups/groups.html">Groups</a></div>
+    </div>
+  </nav>
+  <main class="page">
+    <h1>Profile</h1>
+    <section class="grid">
+      <article class="card span-6">
+        <div class="card-header"><h3>Account</h3></div>
+        <div id="profile" class="card-body"></div>
+      </article>
+      <article id="passwordCard" class="card span-6">
+        <div class="card-header"><h3>Change Password</h3></div>
+        <div class="card-body">
+          <form id="passwordForm">
+            <div class="field"><label for="currentPassword">Current password</label><input id="currentPassword" type="password" required></div>
+            <div class="field"><label for="newPassword">New password</label><input id="newPassword" type="password" required></div>
+            <button class="btn-primary" type="submit">Update</button>
+          </form>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script type="module" src="../../shared/js/auth-guard.js"></script>
+  <script type="module" src="profile.js"></script>
+</body>
+</html>

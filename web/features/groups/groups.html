@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BudgetBuddy Groups</title>
+  <link rel="stylesheet" href="../../shared/styles/variables.css">
+  <link rel="stylesheet" href="../../shared/styles/components.css">
+  <link rel="stylesheet" href="../../shared/styles/layout.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="../dashboard/dashboard.html">BudgetBuddy</a>
+      <div class="nav-links">
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="../profile/profile.html">Profile</a>
+      </div>
+    </div>
+  </nav>
+  <main class="page">
+    <h1>Groups</h1>
+    <section class="grid">
+      <article class="card span-4">
+        <div class="card-header"><h3>Create Group</h3></div>
+        <div class="card-body">
+          <form id="groupForm">
+            <div class="field"><label for="groupName">Name</label><input id="groupName" required></div>
+            <div class="field"><label for="groupDescription">Description</label><textarea id="groupDescription"></textarea></div>
+            <button class="btn-primary" type="submit">Create</button>
+          </form>
+        </div>
+      </article>
+      <article class="card span-8">
+        <div class="card-header"><h3>Your Groups</h3></div>
+        <div id="groupsList" class="card-body"><div class="empty-state">No groups yet — create your first one!</div></div>
+      </article>
+    </section>
+  </main>
+  <script type="module" src="../../shared/js/auth-guard.js"></script>
+  <script type="module" src="groups.js"></script>
+</body>
+</html>

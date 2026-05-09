@@ -1,0 +1,7 @@
+.ai/
+.idea/libraries/
+.idea.local-backup-*/
+**/.gradle/
+**/target/
+**/*.log
+IT342_Casas_BudgetBuddy-main/

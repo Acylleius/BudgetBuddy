@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BudgetBuddy Login</title>
+  <link rel="stylesheet" href="../../shared/styles/variables.css">
+  <link rel="stylesheet" href="../../shared/styles/components.css">
+  <link rel="stylesheet" href="../../shared/styles/layout.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="card auth-card">
+      <div class="card-header">
+        <div>
+          <h1>BudgetBuddy</h1>
+          <p>Sign in or create an account.</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <form id="loginForm">
+          <div class="field">
+            <label for="loginEmail">Email</label>
+            <input id="loginEmail" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="loginPassword">Password</label>
+            <input id="loginPassword" type="password" autocomplete="current-password" required>
+          </div>
+          <button class="btn-primary" type="submit">Login</button>
+        </form>
+
+        <div class="divider"><span>or</span></div>
+        <a href="/api/v1/auth/google" class="btn-google">
+          <img src="https://developers.google.com/identity/images/g-logo.png" width="18" alt="Google">
+          Continue with Google
+        </a>
+
+        <div class="divider"><span>new account</span></div>
+        <form id="registerForm">
+          <div class="grid">
+            <div class="field span-6">
+              <label for="firstname">First name</label>
+              <input id="firstname" required>
+            </div>
+            <div class="field span-6">
+              <label for="lastname">Last name</label>
+              <input id="lastname" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="registerEmail">Email</label>
+            <input id="registerEmail" type="email" required>
+          </div>
+          <div class="field">
+            <label for="registerPassword">Password</label>
+            <input id="registerPassword" type="password" required>
+          </div>
+          <button class="btn-secondary" type="submit">Create Account</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="auth.js"></script>
+</body>
+</html>
